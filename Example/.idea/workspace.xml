@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e639dff-c04c-4e2a-b136-03fe6ea3333f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" afterPath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" afterPath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" />
     </list>
     <ignored path="Example.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,18 +52,18 @@
       <file leaf-file-name="NEIApplicationConfig.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="48" column="125" lean-forward="false" selection-start-line="48" selection-start-column="125" selection-end-line="48" selection-end-column="125" />
+            <state relative-caret-position="896">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NEIApplicationConfig.m" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NEIApplicationConfig.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="202" column="25" lean-forward="false" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
+            <state relative-caret-position="667">
+              <caret line="239" column="25" lean-forward="false" selection-start-line="239" selection-start-column="25" selection-end-line="239" selection-end-column="25" />
               <folding>
                 <element signature="e#83#115#0" expanded="true" />
                 <element signature="e#1545#1944#0" expanded="true" />
@@ -81,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NEIAppDelegate.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NEIAppDelegate.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NEIApplicationConfig/NEIAppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="784">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="e#143#169#0" expanded="true" />
               </folding>
@@ -107,9 +108,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>jwhitfield</find>
       <find>setObject</find>
       <find>setO</find>
-      <find>jwhitfield</find>
+      <find>class</find>
+      <find>interpolateValue</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -121,10 +124,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" />
-        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" />
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/NEIApplicationConfig/NEIAppDelegate.m" />
+        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" />
+        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" />
       </list>
     </option>
   </component>
@@ -239,12 +242,12 @@
       <workItem from="1480672009378" duration="5000" />
       <workItem from="1480688129231" duration="2559000" />
       <workItem from="1480934946984" duration="991000" />
-      <workItem from="1501864364084" duration="8407000" />
+      <workItem from="1501864364084" duration="9064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16486000" />
+    <option name="totallyTimeSpent" value="17143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="836" y="23" width="1637" height="1948" extended-state="0" />
@@ -384,30 +387,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="48" column="125" lean-forward="false" selection-start-line="48" selection-start-column="125" selection-end-line="48" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NEIApplicationConfig/NEIViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="202" column="25" lean-forward="false" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
-          <folding>
-            <element signature="e#83#115#0" expanded="true" />
-            <element signature="e#1545#1944#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -427,10 +411,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NEIApplicationConfig/NEIAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="784">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="e#143#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="239" column="25" lean-forward="false" selection-start-line="239" selection-start-column="25" selection-end-line="239" selection-end-column="25" />
+          <folding>
+            <element signature="e#83#115#0" expanded="true" />
+            <element signature="e#1545#1944#0" expanded="true" />
           </folding>
         </state>
       </provider>
