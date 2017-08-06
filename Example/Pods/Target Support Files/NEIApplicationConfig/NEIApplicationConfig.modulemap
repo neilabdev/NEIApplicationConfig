@@ -1,0 +1,6 @@
+framework module NEIApplicationConfig {
+  umbrella header "NEIApplicationConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}

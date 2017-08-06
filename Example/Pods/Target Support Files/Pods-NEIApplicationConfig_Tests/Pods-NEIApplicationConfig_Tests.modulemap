@@ -1,0 +1,6 @@
+framework module Pods_NEIApplicationConfig_Tests {
+  umbrella header "Pods-NEIApplicationConfig_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
