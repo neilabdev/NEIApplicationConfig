@@ -164,7 +164,7 @@ class YourViewController : UIViewController {
 
 ## Author
 
-ghost, ghost@neilab.com
+GHOST, ghost [at] neilab.com
 
 ## License
 

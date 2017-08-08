@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NEIApplicationConfig'
   s.version          = '1.0.0'
-  s.summary          = 'Allows developers to have configurations defined in a config file per environment,
+  s.summary          = 'Allows custom configurations defined in a config file per environment,
 which makes deployment and testing easier.'
 
 # This description is used to generate tags and improve search results.
