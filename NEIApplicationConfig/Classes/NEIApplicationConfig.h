@@ -26,7 +26,7 @@
 
 + (nullable NSString *)stringForKey:(nonnull NSString *)key  NS_SWIFT_NAME( get(stringForKey:) );
 
-+ (nullable Class)classForKey:(nonnull NSString *)key value:(nullable NSString *)value NS_SWIFT_NAME(get(classForKey:defaultValue:));
++ (nullable Class)classForKey:(nonnull NSString *)key value:(nonnull NSString *)value NS_SWIFT_NAME(get(classForKey:defaultValue:));
 
 + (nullable Class)classForKey:(nonnull NSString *)key NS_SWIFT_NAME(get(classForKey:));
 
@@ -61,7 +61,6 @@
 - (nullable CTFontRef)createFontWithName:(nonnull NSString *)name ;
 
 - (nonnull NSArray *)allKeys ;
-
 - (nullable Class)classForKey:(nonnull NSString *)key value:(nonnull NSString *)value NS_SWIFT_NAME(get(classForKey:defaultValue:));
 
 - (nullable Class)classForKey:(nonnull NSString *)key  NS_SWIFT_NAME(get(classForKey:));

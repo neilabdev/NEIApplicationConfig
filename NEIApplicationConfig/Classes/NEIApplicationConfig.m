@@ -121,7 +121,6 @@ static NEIApplicationConfig *sharedInstance = nil;
     return [[self defaults] allKeys];
 }
 
-
 + (nullable Class)classForKey:(nonnull NSString *)key value:(nonnull NSString *)value {
     return [[self defaults] classForKey:key value:value];
 }
@@ -249,7 +248,6 @@ static NEIApplicationConfig *sharedInstance = nil;
 - (NSString *) interpolateValue:(nonnull NSString *) value keys: (nullable NSMutableDictionary*) dictionary {
 
     return value;
-
     /*
     // TODO: Should interpolate :value for {KEY}
     NSScanner *scanner = [NSScanner scannerWithString:value];
