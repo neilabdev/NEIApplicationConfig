@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e639dff-c04c-4e2a-b136-03fe6ea3333f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NEIApplicationConfig.podspec" afterPath="$PROJECT_DIR$/../NEIApplicationConfig.podspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" afterPath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" afterPath="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" />
     </list>
     <ignored path="Example.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +28,9 @@
       <file leaf-file-name="NEIApplicationConfig.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-              <folding>
-                <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-              </folding>
+            <state relative-caret-position="896">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -38,8 +38,8 @@
       <file leaf-file-name="NEIApplicationConfig.podspec" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig.podspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state relative-caret-position="462">
+              <caret line="33" column="87" lean-forward="false" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -49,11 +49,11 @@
         <entry file="file://$PROJECT_DIR$/../README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2632">
+              <first_editor relative-caret-position="1326">
                 <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
                 <folding>
-                  <marker date="1505138489000" expanded="true" signature="3223:3851" ph="{...}" />
-                  <marker date="1505138489000" expanded="true" signature="3308:3849" ph="{...}" />
+                  <marker date="1505142327000" expanded="true" signature="3223:3851" ph="{...}" />
+                  <marker date="1505142327000" expanded="true" signature="3308:3849" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -64,8 +64,8 @@
       <file leaf-file-name="NEIApplicationConfig.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="32" column="128" lean-forward="true" selection-start-line="32" selection-start-column="128" selection-end-line="32" selection-end-column="128" />
+            <state relative-caret-position="665">
+              <caret line="212" column="51" lean-forward="true" selection-start-line="212" selection-start-column="51" selection-end-line="212" selection-end-column="51" />
               <folding>
                 <element signature="e#83#115#0" expanded="true" />
               </folding>
@@ -112,6 +112,7 @@
       <find>setObject</find>
       <find>setO</find>
       <find>jwhitfield</find>
+      <find>classForKey</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -123,11 +124,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" />
-        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" />
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/NEIApplicationConfig/NEIAppDelegate.m" />
         <option value="$PROJECT_DIR$/../NEIApplicationConfig.podspec" />
+        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h" />
+        <option value="$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m" />
       </list>
     </option>
   </component>
@@ -243,15 +244,16 @@
       <workItem from="1480688129231" duration="2559000" />
       <workItem from="1480934946984" duration="991000" />
       <workItem from="1501864364084" duration="8407000" />
-      <workItem from="1505141938684" duration="343000" />
+      <workItem from="1505141938684" duration="1717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18872000" />
+    <option name="totallyTimeSpent" value="20246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="836" y="23" width="1637" height="1948" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19382504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -261,7 +263,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23421478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23421478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -297,9 +299,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
           <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -317,8 +317,8 @@
           <first_editor relative-caret-position="2632">
             <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
             <folding>
-              <marker date="1505138489000" expanded="true" signature="3223:3851" ph="{...}" />
-              <marker date="1505138489000" expanded="true" signature="3308:3849" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3223:3851" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3308:3849" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -365,9 +365,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="784">
           <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -421,8 +419,8 @@
           <first_editor relative-caret-position="2296">
             <caret line="164" column="9" lean-forward="false" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
             <folding>
-              <marker date="1505138489000" expanded="true" signature="3223:3851" ph="{...}" />
-              <marker date="1505138489000" expanded="true" signature="3308:3849" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3223:3851" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3308:3849" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -433,9 +431,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -453,9 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -473,9 +467,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -493,9 +485,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -559,9 +549,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,8 +559,8 @@
           <first_editor relative-caret-position="1214">
             <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
             <folding>
-              <marker date="1505138489000" expanded="true" signature="3223:3851" ph="{...}" />
-              <marker date="1505138489000" expanded="true" signature="3308:3849" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3223:3851" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3308:3849" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -583,9 +571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -603,9 +589,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -623,9 +607,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -643,9 +625,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,35 +657,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding>
-            <marker date="1505138486000" expanded="true" signature="237:3406" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NEIApplicationConfig/NEIViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2632">
-            <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-            <folding>
-              <marker date="1505138489000" expanded="true" signature="3223:3851" ph="{...}" />
-              <marker date="1505138489000" expanded="true" signature="3308:3849" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -719,18 +675,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1326">
+            <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <folding>
+              <marker date="1505142327000" expanded="true" signature="3223:3851" ph="{...}" />
+              <marker date="1505142327000" expanded="true" signature="3308:3849" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig.podspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="462">
+          <caret line="33" column="87" lean-forward="false" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../NEIApplicationConfig/Classes/NEIApplicationConfig.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="32" column="128" lean-forward="true" selection-start-line="32" selection-start-column="128" selection-end-line="32" selection-end-column="128" />
+        <state relative-caret-position="665">
+          <caret line="212" column="51" lean-forward="true" selection-start-line="212" selection-start-column="51" selection-end-line="212" selection-end-column="51" />
           <folding>
             <element signature="e#83#115#0" expanded="true" />
           </folding>
