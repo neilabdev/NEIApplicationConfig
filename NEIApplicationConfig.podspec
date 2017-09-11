@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NEIApplicationConfig'
-  s.version          = '1.0.0'
-  s.summary          = 'Allows developers to have configurations defined in a config file per environment,
+  s.version          = '1.0.1'
+  s.summary          = 'Allows custom configurations defined in a config file per environment and or bundle identifier,
 which makes deployment and testing easier.'
 
 # This description is used to generate tags and improve search results.
@@ -19,11 +19,12 @@ which makes deployment and testing easier.'
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-NEIApplicationConfig allows developers to have configurations defined in a config file per environment,
-which makes deployment and testing easier. While usage of application properties via .plist is useful,
+NEIApplicationConfig allows developers to have configurations defined in a config file per environment & bundle identifier,
+which makes deployment and testing multiple versions easier. While usage of application properties via .plist is useful,
 NEIApplicationConfig allows you can easily target Simulator, Device and Production 
-environments respectively. With NEIApplicationConfig, you will specify a default configuration as a baseline, and overrides that are 
-pertinent to their respective environments
+environments respectively, in addition to overrides specific to a bundle identifier, e.g. Production, Beta, Adhoc, etc. 
+With NEIApplicationConfig, you will specify a default configuration as a baseline, and overrides that are 
+pertinent to their respective circumstances.
                        DESC
 
   s.homepage         = 'https://github.com/neilabdev/NEIApplicationConfig'
