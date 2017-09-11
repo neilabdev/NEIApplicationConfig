@@ -22,6 +22,7 @@ DerivedData
 
 # Bundler
 .bundle
+.idea/
 
 Carthage
 # We recommend against adding the Pods directory to your .gitignore. However

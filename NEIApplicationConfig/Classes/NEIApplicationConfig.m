@@ -22,6 +22,7 @@
 static NEIApplicationConfig *sharedInstance = nil;
 
 - (id)initWithDictionary:(nullable NSDictionary *)dictionary {
+    NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
     if (self = [super init]) {
         if (dictionary) {
             _config = [NSMutableDictionary dictionaryWithDictionary:[NEIApplicationConfig defaults].config];
@@ -33,7 +34,6 @@ static NEIApplicationConfig *sharedInstance = nil;
             } else {
                 _config = [NSMutableDictionary dictionary];
             }
-
 
 #if DEBUG
             if ([[NSFileManager defaultManager] fileExistsAtPath:(configPath = [[NSBundle mainBundle] pathForResource:@"ApplicationConfig.debug" ofType:@"plist"])]) {
@@ -50,6 +50,11 @@ static NEIApplicationConfig *sharedInstance = nil;
             NSLog(@"IOS Simulator configuration disabled");
 #endif
 
+
+            if(bundleIdentifier && [self.config[bundleIdentifier] isKindOfClass:[NSDictionary class]]) {
+                NSDictionary * bundleDictionary = self.config[bundleIdentifier];
+                [self.config addEntriesFromDictionary:bundleDictionary];
+            }
         }
     }
     return self;
@@ -116,12 +121,13 @@ static NEIApplicationConfig *sharedInstance = nil;
     return [[self defaults] allKeys];
 }
 
-+ (nullable Class)classForKey:(nonnull NSString *)key value:(nullable NSString *)value {
+
++ (nullable Class)classForKey:(nonnull NSString *)key value:(nonnull NSString *)value {
     return [[self defaults] classForKey:key value:value];
 }
 
 + (nullable Class)classForKey:(nonnull NSString *)key {
-    return [self classForKey:key value:nil];
+    return [[self defaults] classForKey:key defaultValue:nil];
 }
 
 + (nonnull NEIApplicationConfig *)defaults {
@@ -191,9 +197,21 @@ static NEIApplicationConfig *sharedInstance = nil;
 }
 
 - (nullable Class)classForKey:(nonnull NSString *)key value:(NSString *)value {
+    return [self classForKey:key defaultValue:value];
+}
+
+- (nullable Class)classForKey:(nonnull NSString *)key defaultValue:(NSString *)value {
     NSString *className = [self stringForKey:key value:value];
     Class class = NSClassFromString(className);
     return class;
+}
+
++ (nullable Class)classForKey:(nonnull NSString *)key defaultValue:(NSString *)value {
+    return [[self defaults] classForKey:key defaultValue:value];
+}
+
+- (nullable Class)classForKey:(nonnull NSString *)key {
+    return [self classForKey:key defaultValue:nil];
 }
 
 - (NSInteger)intForKey:(nonnull NSString *)key value:(NSInteger)default_value {
