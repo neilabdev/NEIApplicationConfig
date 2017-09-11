@@ -22,6 +22,7 @@
 static NEIApplicationConfig *sharedInstance = nil;
 
 - (id)initWithDictionary:(nullable NSDictionary *)dictionary {
+    NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
     if (self = [super init]) {
         if (dictionary) {
             _config = [NSMutableDictionary dictionaryWithDictionary:[NEIApplicationConfig defaults].config];
@@ -33,7 +34,6 @@ static NEIApplicationConfig *sharedInstance = nil;
             } else {
                 _config = [NSMutableDictionary dictionary];
             }
-
 
 #if DEBUG
             if ([[NSFileManager defaultManager] fileExistsAtPath:(configPath = [[NSBundle mainBundle] pathForResource:@"ApplicationConfig.debug" ofType:@"plist"])]) {
@@ -50,6 +50,11 @@ static NEIApplicationConfig *sharedInstance = nil;
             NSLog(@"IOS Simulator configuration disabled");
 #endif
 
+
+            if(bundleIdentifier && [self.config[bundleIdentifier] isKindOfClass:[NSDictionary class]]) {
+                NSDictionary * bundleDictionary = self.config[bundleIdentifier];
+                [self.config addEntriesFromDictionary:bundleDictionary];
+            }
         }
     }
     return self;

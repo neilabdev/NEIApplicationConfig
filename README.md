@@ -5,10 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/NEIApplicationConfig.svg?style=flat)](http://cocoapods.org/pods/NEIApplicationConfig)
 [![Platform](https://img.shields.io/cocoapods/p/NEIApplicationConfig.svg?style=flat)](http://cocoapods.org/pods/NEIApplicationConfig)
 
-*NEIApplicationConfig* allows developers to have configurations defined in a config file per environment,
-which makes deployment and testing easier. While usage of application properties via *.plist* is useful,
+*NEIApplicationConfig* allows developers to have configurations defined in a config file per environment & bundle identifier,
+which makes deployment and testing multiple versions easier. While usage of application properties via *.plist* is useful,
 NEIApplicationConfig allows you can easily target Simulator, Device and Production 
-environments respectively. With NEIApplicationConfig, you will specify a default configuration as a baseline, and overrides that are 
+environments respectively, in addition to overrides specific to a bundle identifier, e.g. Production, Beta, Adhoc, etc. 
+With NEIApplicationConfig, you will specify a default configuration as a baseline, and overrides that are 
 pertinent to their respective environments.
 
  
@@ -35,12 +36,25 @@ ApplicationConfig.simulator.plist
 Upon loading, the application will ALWAYS load *ApplicationConfig.plist*, and optionally *ApplicaitonConfig.debug.plist*
 if the **DEBUG** macro is enabled, and *ApplicationConfig.simulator.plist* if the application is running in the simulator.
 
-Using this method, a released application will only utilize *ApplicationConfig.plist*, as it is neither being *debuged*, 
+Using this method, a released application will only utilize *ApplicationConfig.plist*, as it is neither being *debugged*, 
 nor is it running in the *simulator*, and if its being debugged on a device, both *ApplicationConfig.plist* and
-*ApplicationConfig.debug.plist* will be loaded and merged.
+*ApplicationConfig.debug.plist* will be loaded and merged, while *ApplicationConfig.simulator.plist* will be utilized if
+executing within the simulator.
+
+#### Bundle Overrides
+
+In addition to the aformentioned load orders, each configuration may include a bundle identifier as a key,
+whose value must be a dictionary for overriding purposes, which will subsequently be added to the root of the
+merged application configuration. This allows developers to target specific bundle configurations, such as Beta, Adhoc,
+etc, which may be needed to point to different backing server, such as staging.
+
+For example, you want to test new enhancements to be released which should point to a staging server instead of production.
+You may therefore add *com.myapp.beta.AppName* key whose dictionary contains keys which point to the corresponding
+web service urls, etc. 
 
 
-### Utilization
+
+### Integration
 
 *NEIApplicationConfig* may always use static singleton method *defaults()* to get the default/merged configuration, or 
 assign the defaults to a variable *config* which will be used to reference configuration.
@@ -160,7 +174,10 @@ class YourViewController : UIViewController {
 
 
 ```
+## TODO
 
+* Variable Interpolation
+* Better Documentation
 
 ## Author
 
