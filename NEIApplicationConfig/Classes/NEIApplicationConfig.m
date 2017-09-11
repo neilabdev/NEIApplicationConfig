@@ -121,12 +121,12 @@ static NEIApplicationConfig *sharedInstance = nil;
     return [[self defaults] allKeys];
 }
 
-+ (nullable Class)classForKey:(nonnull NSString *)key value:(NSString *)value {
++ (nullable Class)classForKey:(nonnull NSString *)key value:(nonnull NSString *)value {
     return [[self defaults] classForKey:key value:value];
 }
 
 + (nullable Class)classForKey:(nonnull NSString *)key {
-    return [self classForKey:key value:nil];
+    return [[self defaults] classForKey:key defaultValue:nil];
 }
 
 + (nonnull NEIApplicationConfig *)defaults {
@@ -196,9 +196,21 @@ static NEIApplicationConfig *sharedInstance = nil;
 }
 
 - (nullable Class)classForKey:(nonnull NSString *)key value:(NSString *)value {
+    return [self classForKey:key defaultValue:value];
+}
+
+- (nullable Class)classForKey:(nonnull NSString *)key defaultValue:(NSString *)value {
     NSString *className = [self stringForKey:key value:value];
     Class class = NSClassFromString(className);
     return class;
+}
+
++ (nullable Class)classForKey:(nonnull NSString *)key defaultValue:(NSString *)value {
+    return [[self defaults] classForKey:key defaultValue:value];
+}
+
+- (nullable Class)classForKey:(nonnull NSString *)key {
+    return [self classForKey:key defaultValue:nil];
 }
 
 - (NSInteger)intForKey:(nonnull NSString *)key value:(NSInteger)default_value {
@@ -230,13 +242,13 @@ static NEIApplicationConfig *sharedInstance = nil;
 }
 
 - (void)setObject:(id)obj forKeyedSubscript:(NSString *)key {
-    self.config[key];
+    self.config[key] = obj;
 }
 
 - (NSString *) interpolateValue:(nonnull NSString *) value keys: (nullable NSMutableDictionary*) dictionary {
 
     return value;
-
+    /*
     // TODO: Should interpolate :value for {KEY}
     NSScanner *scanner = [NSScanner scannerWithString:value];
     NSMutableString *buffer = [NSMutableString string];
@@ -276,7 +288,7 @@ static NEIApplicationConfig *sharedInstance = nil;
         // there is no closing }
     }
 
-    return buffer;
+    return buffer; */
 }
 
 #pragma mark - Deallocation

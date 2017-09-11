@@ -54,15 +54,16 @@
 
 - (nullable NSString *)stringForKey:(nonnull NSString *)key NS_SWIFT_NAME(get(stringForKey:));
 
-- (float)floatForKey:(nonnull NSString *)key value:(float)default_value NS_SWIFT_NAME(get(floatForKey:));
+- (float)floatForKey:(nonnull NSString *)key value:(float)default_value NS_SWIFT_NAME(get(floatForKey:value:));
 
 - (nullable UIFont *)fontWithName:(nonnull NSString *)name  NS_SWIFT_NAME(font(named:));
 
 - (nullable CTFontRef)createFontWithName:(nonnull NSString *)name ;
 
-- (nonnull NSArray *)allKeys  NS_SWIFT_NAME(keys);
-
+- (nonnull NSArray *)allKeys ;
 - (nullable Class)classForKey:(nonnull NSString *)key value:(nonnull NSString *)value NS_SWIFT_NAME(get(classForKey:defaultValue:));
+
+- (nullable Class)classForKey:(nonnull NSString *)key  NS_SWIFT_NAME(get(classForKey:));
 
 - (BOOL)booleanForKey:(nonnull NSString *)key value:(BOOL)default_value  NS_SWIFT_NAME(get(booleanForKey:defaultValue:));
 
