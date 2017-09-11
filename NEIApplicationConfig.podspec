@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NEIApplicationConfig'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Allows custom configurations defined in a config file per environment and or bundle identifier,
 which makes deployment and testing easier.'
 
